@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+
+	<!--Navigation menu section-->
+	<!--Menu icon-->
+	<div class="CurtainMenu">
+		<p class="menu-icon-style" onclick="openNav()">&#9776; MENU</p>
+	</div>
+	
+	<!--Hide the menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">&times;</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="New Features.html">New Star Wars Features</a></li>
+				<li><a href="Reviews.html">Reviews</a></li>
+				<li><a href="Top and Bottom Picks.html">Best And Worst Star Wars Features</a></li>
+				<li><a href="About_Us.html">About Us</a></li>
+				<li><a href="My account.html" class ="nav_active">My Account</a></li>		
+			</ul>
+		</div>
+	</nav>
+		
+	
+	<!--Header section-->
+	<header>
+		<div>
+			<h1>Ethan's Star Wars E-Mag</h1>
+			
+		</div>
+	</header>	
+	
+
+	<!--Main content section-->
+	<main>
+		<h3>Subscribe to our Newsletter</h3>
+		<section class="grey-section">
+			<form id="myForm" action="Form Submitted.html">
+				<div>If you do not select the box, then don't bother subscribing.</div>
+				<div class="container" style="background-color:white">
+					<input type="text" placeholder="Name" name="name" required class="black">
+					<input type="text" placeholder="Email address" name="mail" required class="black">
+					<label class="black">
+						<input type="checkbox" checked="checked" name="subscribe"> Do you consent to receiving emails regarding updates to our website?
+					</label>
+				</div>
+				<div class="container">
+					<input type="submit" value="Subscribe" onsubmit="submit()">
+				</div>
+			</form>		
+		</section>
+	</main>
+	
+	<!--Footer section-->
+	<footer>
+		<div> 
+			Created by: Ethan Huston <br />
+			Contact me with issues or queries at: <a href="mailto:ethanthuston67@gmail.com">ethanthuston67@gmail.com</a><br>
+			<a href="Footer Notes/references-statement-of-authenticity.html">References & Authenticity</a> | 
+			<a href="Footer Notes/privacy-policy.html">Privacy Policy</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/JavaScript.js">
+	</script>
+
+</body>
+</html>
+

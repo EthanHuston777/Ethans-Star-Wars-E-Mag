@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+
+	<!--Navigation menu section-->
+	<!--Menu icon-->
+	<div class="CurtainMenu">
+		<p class="menu-icon-style" onclick="openNav()">&#9776; MENU</p>
+	</div>
+	
+	<!--Hide the menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">&times;</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="New Features.html">New Star Wars Features</a></li>
+				<li><a href="Reviews.html" class ="nav_active">Reviews</a></li>
+				<li><a href="Top and Bottom Picks.html">Best And Worst Star Wars Features</a></li>
+				<li><a href="About_Us.html">About Us</a></li>
+				<li><a href="My account.html">My Account</a></li>			
+			</ul>
+		</div>
+	</nav>
+		
+	
+	<!--Header section-->
+	<header>
+		<div>
+			<h1>Ethan's Star Wars E-Mag</h1>
+			
+		</div>
+	</header>	
+	
+
+	<!--Main content section-->
+	<main>
+		<h2>Reviews</h2>
+		<section class="grey-section">
+		
+			<h4>Revenge of the Sith: 9.5/10</h4>
+			<a target="_blank" href="Media/ROTS-poster.jpeg"><img src="Media/ROTS-poster.jpeg" alt="ROTS-poster" width="10%"></a>
+			<a target="_blank" href="Media/ROTS-storming-temple.png"><img src="Media/ROTS-storming-temple.png" alt="ROTS-storming-temple" width="27%"></a>
+			<a target="_blank" href="Media/ROTS-dooku-dead.jpeg"><img src="Media/ROTS-dooku-dead.jpeg" alt="ROTS-dooku-dead" width="27%"></a>
+			<a target="_blank" href="Media/ROTS-hello-there.png"><img src="Media/ROTS-hello-there.png" alt="ROTS-hello-there" width="27%"></a>
+			<p id="abstract1">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+				"Pellentesque habitant morbi tristique senectus et netus et malesuada..."
+			</p>
+			<p id="detailed1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper magna id nibh finibus, ultrices molestie tellus venenatis. Curabitur gravida, tortor sit amet molestie consectetur, tortor tortor dictum leo, nec imperdiet neque leo id felis. Duis laoreet, massa in pharetra tempor, lectus turpis venenatis dui, a dictum lacus mi at diam. Cras at eros consectetur ligula dapibus viverra. Pellentesque imperdiet lectus tellus. Pellentesque faucibus diam ac venenatis dictum. Suspendisse scelerisque ultricies lacinia. Integer tristique ipsum nec sagittis porttitor. Quisque ac lacinia massa. Mauris augue augue, iaculis non facilisis ac, fermentum eu magna. Integer mattis ultrices luctus. Proin semper pellentesque eros, vel pretium lacus cursus at. Aliquam fringilla nulla vel pellentesque egestas. Nunc sed elit aliquet nisl aliquet tristique. Mauris accumsan eros at augue rutrum, quis cursus turpis elementum. Duis arcu quam, posuere at nulla et, luctus malesuada nibh.<br>
+			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at egestas leo. Maecenas varius malesuada metus, at malesuada massa vulputate et. Ut sit amet est eu sem vestibulum interdum quis ac est. Praesent ipsum nunc, elementum nec convallis et, fermentum eget nunc. Nullam cursus fermentum varius. Duis quis rutrum nisi, in condimentum magna. Cras tristique erat at fermentum tempor. Aenean convallis justo molestie arcu imperdiet venenatis. Sed eget massa rutrum, condimentum elit nec, lobortis magna. Curabitur non maximus mauris. Phasellus ac auctor purus. Phasellus a dignissim elit, nec semper nisi.
+			</p>
+			<button id="expandBtn1" onclick="expandText1()" value="MORE" class="black">MORE</button>
+		</section>
+		
+		<section class="grey-section">
+		
+			<h4>The Last Jedi: 3/10</h4>
+			<a target="_blank" href="Media/TLJ-poster.png"><img src="Media/TLJ-poster.png" alt="TLJ-poster" width="8%"></a>
+			<a target="_blank" href="Media/TLJ-rey-and-luke.png"><img src="Media/TLJ-rey-and-luke.png" alt="TLJ-rey-and-luke" width="27%"></a>
+			<a target="_blank" href="Media/TLJ-sacred-texts.png"><img src="Media/TLJ-sacred-texts.png" alt="TLJ-sacred-texts" width="27%"></a>
+			<a target="_blank" href="Media/TLJ-duel.png"><img src="Media/TLJ-duel.png" alt="TLJ-duel" width="27%"></a>
+			<p id="abstract2">"This movie was probably the most disappointing..."<br>
+				"see our beloved Luke Skywalker, but when we did he through away his original lightsaber..."
+			</p>
+			<p id="detailed2">This movie was probably the most disappointing out of all the Star Wars films. It had such an incredible potential but was a disappointment from the very beginning. It wasn't until 14 minutes in that we got to see our beloved Luke Skywalker, but when we did he through away his original lightsaber as though he was never a jedi<br>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper magna id nibh finibus, ultrices molestie tellus venenatis. Curabitur gravida, tortor sit amet molestie consectetur, tortor tortor dictum leo, nec imperdiet neque leo id felis. Duis laoreet, massa in pharetra tempor, lectus turpis venenatis dui, a dictum lacus mi at diam. Cras at eros consectetur ligula dapibus viverra. Pellentesque imperdiet lectus tellus. Pellentesque faucibus diam ac venenatis dictum. Suspendisse scelerisque ultricies lacinia. Integer tristique ipsum nec sagittis porttitor. Quisque ac lacinia massa. Mauris augue augue, iaculis non facilisis ac, fermentum eu magna. Integer mattis ultrices luctus. Proin semper pellentesque eros, vel pretium lacus cursus at. Aliquam fringilla nulla vel pellentesque egestas. Nunc sed elit aliquet nisl aliquet tristique. Mauris accumsan eros at augue rutrum, quis cursus turpis elementum. Duis arcu quam, posuere at nulla et, luctus malesuada nibh.<br>
+			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at egestas leo. Maecenas varius malesuada metus, at malesuada massa vulputate et. Ut sit amet est eu sem vestibulum interdum quis ac est. Praesent ipsum nunc, elementum nec convallis et, fermentum eget nunc. Nullam cursus fermentum varius. Duis quis rutrum nisi, in condimentum magna. Cras tristique erat at fermentum tempor. Aenean convallis justo molestie arcu imperdiet venenatis. Sed eget massa rutrum, condimentum elit nec, lobortis magna. Curabitur non maximus mauris. Phasellus ac auctor purus. Phasellus a dignissim elit, nec semper nisi.
+			</p>
+			<button id="expandBtn2" onclick="expandText2()" value="MORE" class="black">MORE</button>
+		</section>
+	</main>
+	
+	<!--Footer section-->
+	<footer>
+		<div> 
+			Created by: Ethan Huston <br />
+			Contact me with issues or queries at: <a href="mailto:ethanthuston67@gmail.com">ethanthuston67@gmail.com</a><br>
+			<a href="Footer Notes/references-statement-of-authenticity.html">References & Authenticity</a> | 
+			<a href="Footer Notes/privacy-policy.html">Privacy Policy</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/JavaScript.js">
+	</script>
+
+</body>
+</html>
+
